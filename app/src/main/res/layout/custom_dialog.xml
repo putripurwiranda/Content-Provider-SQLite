@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdPink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PINK" />
+
+        <RadioButton
+            android:id="@+id/rdYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rdPink"
+            android:text="YELLOW" />
+
+        <RadioButton
+            android:id="@+id/rdGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rdYellow"
+            android:text="GREEN" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdGroup"
+        android:layout_centerInParent="true"
+        android:text="Change Background Color" />
+
+
+</RelativeLayout>
